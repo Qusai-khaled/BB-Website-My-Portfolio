@@ -1,0 +1,113 @@
+.header {
+    background-image: url(../../../image/business-code-coding-computer-270632.jpg);
+    @include prefixer(background-size, cover, moz o webkit);
+
+    .overlay {
+        @extend %overlay;
+
+        .navbar {
+            @include prefixer(transition, all 1s ease-in-out, moz o webkit);
+            background-color: transparent;
+
+            .navbar-brand {
+                @extend %heading;
+
+                &:hover {
+                    @extend %heading;
+                }
+            }
+
+            button {
+                border-color: $head-Color !important;
+                outline: none;
+
+                span {
+                    font-size: 30px;
+                }
+
+                i {
+                    color: $head-Color !important;
+                }
+            }
+
+            .navbar-nav {
+                a {
+                    color: $head-Color !important;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: normal;
+
+                    &:hover {
+                        color: $back-Color !important;
+                    }
+                }
+            }
+        }
+
+        .hi {
+            @include prefixer(transition, all 1s ease-in-out, moz o webkit);
+            padding: 60px $padding;
+            color: $head-Color;
+
+            h2 {
+                margin-top: 9%;
+
+                @media #{$maxMobile} {
+                    padding-bottom: 0;
+                }
+
+
+            }
+
+            span {
+                font-size: 45px;
+                @extend %heading;
+
+                @media #{$maxSmall} {
+                    display: block;
+                }
+            }
+
+
+            p {
+                color: $head-Color;
+                line-height: 2;
+                font-size: 40px;
+                font-weight: bold;
+                font-family: inherit;
+                margin: 2%;
+
+                @media #{$maxSmall} {
+                    font-size: 15px;
+
+                }
+
+                @media #{$maxMobile} {
+                    padding-bottom: 0;
+                    line-height: normal;
+                }
+            }
+
+            i {
+                font-size: 40px;
+                border: 2px solid;
+                border-radius: 50%;
+                padding: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $back-Color;
+                }
+
+                @media #{$maxMobile} {
+                    font-size: 20px;
+                    ;
+                }
+            }
+
+
+        }
+
+
+    }
+}

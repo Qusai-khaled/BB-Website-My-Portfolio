@@ -1,0 +1,14 @@
+%button{
+    background-color:$back-Color;
+            outline: none;
+            border-color:$back-Color;
+            color:$head-Color;
+            font-weight: bold;
+            &:hover{
+                 background-color:$hover-Color;
+                    outline: none;
+                    border-color:$hover-Color;
+                    color:$back-Color;
+            }
+    
+}
