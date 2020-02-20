@@ -1,2 +1,1 @@
 # My-Portfolio
-![71879631_362739717942499_4270003107829645312_n](https://user-images.githubusercontent.com/48300650/74967648-18357800-5422-11ea-9aa6-ddc7f2dc40be.jpg)
